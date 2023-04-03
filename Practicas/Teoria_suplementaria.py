@@ -2,7 +2,7 @@
 import os, glob
 
 def carpeta():
-    os.chdir("../../Informes")
+    os.chdir("../Informes")
     txt = glob.glob("*.txt")
     cantidad_estado = []
     cantidad_lineas = []
@@ -15,7 +15,7 @@ def carpeta():
             cantidad_lineas.append (archivo_completo.count("\n"))
             print(cantidad_lineas)
     os.mkdir("Apellidos")
-    with open ("Apellidos/Lista.txt", "r") as salida:
+    with open ("Apellidos/Lista.txt", "w") as salida:
         for archivo in txt:
             with open(archivo, "r") as file:
                 primer_linea = file.readline()
