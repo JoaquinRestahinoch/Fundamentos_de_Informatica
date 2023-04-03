@@ -9,11 +9,11 @@ def siguiente(numero):
 print(siguiente(4))
 
 #Ejercicio 2
-"""
+
 def doble (num):
-    return str(doble(anterior(num)) + " "+ str(doble(siguiente)))
+    return num *2
 print(doble(3))
-"""
+
 #Ejercicio 3
 
 def dobant(numero):
@@ -26,8 +26,8 @@ print(dobsig(4))
 #Ejercicio 4
 
 def retirar_dinero (saldo,monto):
-    max(saldo-monto,0)
-print(retirar_dinero(100,50))
+    return max(saldo-monto,0)
+print(retirar_dinero(1000,50))
 
 #Ejercicio 5
 
@@ -41,7 +41,7 @@ print(dia_de_la_semana_favorito("Sábado"))
 def primeraletra(string):
     if string[0] == "H":
         return(len(string))
-print(primeraletra("SAS"))
+print(primeraletra("HAS"))
 
 #Ejercicio 12
 
