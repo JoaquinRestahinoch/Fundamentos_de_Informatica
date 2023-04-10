@@ -1,0 +1,6 @@
+hola
+chau
+casa
+perro
+gato
+animal
