@@ -1,3 +1,4 @@
+import re
 #Ejercicio 1
 def letra(letra, archivo):
     contador = 0
@@ -39,3 +40,29 @@ def palabras(archivo):
         print()
         print(contador)
 palabras("mda.txt")
+
+#Ejercicio 5
+
+def reemplazar(letra, archivo1, archivo2):
+    with open (archivo1, "r") as file:
+        letras = file.read()
+    for i in letra:
+            nuevaletra = letras.replace (letra, letra + "\n")
+    with open (archivo2, "w") as file:
+        file.write(nuevaletra)
+        
+reemplazar("h","mda.txt","mda2.txt")
+
+#Ejercicio 6
+
+def eliminar(archivo1, archivo2):
+    with open (archivo1, "r") as file:
+        lineas = file.readlines()
+        print(lineas)
+    for i in lineas:
+            for i in lineas:
+                a = re.findall("\n", i)
+                lineas.remove(a)
+    print(lineas)
+        
+eliminar("mda.txt","mda3.txt")
