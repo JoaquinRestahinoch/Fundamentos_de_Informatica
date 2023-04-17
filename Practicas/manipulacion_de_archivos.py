@@ -55,14 +55,50 @@ reemplazar("h","mda.txt","mda2.txt")
 
 #Ejercicio 6
 
+
 def eliminar(archivo1, archivo2):
-    with open (archivo1, "r") as file:
+    with open(archivo1, "r") as file:
         lineas = file.readlines()
-        print(lineas)
-    for i in lineas:
-            for i in lineas:
-                a = re.findall("\n", i)
-                lineas.remove(a)
     print(lineas)
+    lineas2 = []
+    for linea in lineas:
+        linea2 = re.sub("\n", "", linea)
+        lineas2.append(linea2)
+    print(lineas2)
+    with open(archivo2, "w") as file2:
+        for i in lineas2:
+            lineas3 = file2.write(i)
         
 eliminar("mda.txt","mda3.txt")
+
+
+#Ejercicio 7
+
+def larga(archivo1):
+    with open(archivo1, "r") as file:
+        lista = file.readlines()
+        lineas = []
+        for linea in lista:
+            linea = re.sub("\n", "", linea)
+            lineas.append(linea)
+        lista2 = []
+        for i in lineas:
+            lista2.append(len(i))
+        posicion = lista2.index(max(lista2))
+        print("La palabra más larga es", lista[posicion])
+        print("Tiene un total de" + " " + str(posicion) + " " +  "caracteres" )
+larga("mda.txt")
+
+#Ejercicio 8
+
+def arhcivos(archivo1,archivo2, archivo3):
+    with open(archivo1, "r") as file:
+        arch = file.read()
+    with open(archivo2, "r") as file2:
+        arch1 = file2.read()
+    with open(archivo3, "w") as file3:
+        file3.write(arch) 
+        file3.write(arch1) 
+arhcivos("mda.txt","mda2.txt","mda4.txt")
+
+#Ejercicio 9
