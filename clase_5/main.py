@@ -21,3 +21,6 @@ print(roberta.energia)
 roberta.escupir_fuego()
 print(roberta.energia)
 print(roberta.estar_feliz())
+print()
+
+print(pepita.esta_feliz())

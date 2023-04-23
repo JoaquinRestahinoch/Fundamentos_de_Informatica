@@ -1,5 +1,12 @@
+class AnimalAlado:
+  def esta_feliz (self):
+    return self.energia >= 100
+  
+  def comer ():
+    pass
 
-class Golondrina():
+
+class Golondrina(AnimalAlado):
   def __init__(self, energia):
     self.energia = energia
 
@@ -12,10 +19,7 @@ class Golondrina():
   def volar(self, kms):
     self.energia -= 10 + kms
 
-  def estar_feliz(self):
-    return self.energia > 50 
-
-class Dragon():     
+class Dragon(AnimalAlado):     
   def __init__(self, cantidad_dientes, energia):
     self.energia = energia
     self.cantidad_dientes = cantidad_dientes
@@ -31,9 +35,6 @@ class Dragon():
 
   def volar(self, kms):
     self.energia -= 10 + kms/10
-  
-  def estar_feliz(self):
-    return self.energia > 500 
 
 pepita = Golondrina(100)
 anastasia = Golondrina(200)
