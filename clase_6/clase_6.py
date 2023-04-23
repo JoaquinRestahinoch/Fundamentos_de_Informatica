@@ -53,8 +53,7 @@ class Entrenador:
     
     def obtener_equipo_dragones(self):
         return self.equipo_dragones
-lista = agregar_dragones_al_equipo()
-print(Entrenador.agregar_dragones_al_equipo(Dragon,Dragon))
+
   #metodo para aceptar dragones
 
 
