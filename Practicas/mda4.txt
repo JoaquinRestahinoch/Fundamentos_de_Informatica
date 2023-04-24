@@ -3,7 +3,9 @@ chau
 casa
 perro
 gato
-animalh
+animal
+hola
+h
 ola
 ch
 au
@@ -11,3 +13,5 @@ casa
 perro
 gato
 animal
+h
+ola

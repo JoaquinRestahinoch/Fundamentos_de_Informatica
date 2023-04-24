@@ -149,7 +149,8 @@ print(reemplazar2("h&ol@a@_ _chau:je"))
 print(reemplazar2("@@@hola123_"))
 #Ejercicio 14
 def reemplazar3(string):
-    return string.replace(" ", ";").replace("\t", ";")
+    patron = r" "
+    return re.sub(patron, ";", string)
 print(reemplazar3("h    & ol@  a@_ _chau:je"))
 print(reemplazar3("@    @ @hola123_"))
 

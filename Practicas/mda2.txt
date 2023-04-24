@@ -6,3 +6,5 @@ casa
 perro
 gato
 animal
+h
+ola

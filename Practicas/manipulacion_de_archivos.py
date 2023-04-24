@@ -1,4 +1,6 @@
 import re
+import os
+import glob
 #Ejercicio 1
 def letra(letra, archivo):
     contador = 0
@@ -102,3 +104,33 @@ def arhcivos(archivo1,archivo2, archivo3):
 arhcivos("mda.txt","mda2.txt","mda4.txt")
 
 #Ejercicio 9
+
+def frecuencia(archivo):
+    dic = {}
+    with open (archivo, "r") as file:
+        palabras = file.readlines()
+        total = len(palabras)
+        for i in palabras:
+            veces = palabras.count(i)
+            frecuencia = veces/total
+            print("La palabra" + " " + i + " " + "aparece" + " " + str(veces) +" veces" + " " + ",es decir, un " + str(frecuencia) + " % del total" )
+        print(palabras)
+
+print(frecuencia("mda.txt"))
+
+#Ejercicio 10
+
+def leer ():
+    os.chdir("Carpeta1")
+    txt = glob.glob("*.txt")
+    if not os.path.exists("Resultado"):
+        os.mkdir("Resultado")
+    for i in txt:
+        with open (i, "r") as file:
+            archivo = file.read()
+            os.chdir("Resultado")
+            with open ("todo.txt", "a") as file_2:
+                file_2.write(archivo)
+                os.chdir("..")
+    return "todo.txt fue creado correctamente."
+print(leer())
