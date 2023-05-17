@@ -80,9 +80,12 @@ def larga(archivo1):
     with open(archivo1, "r") as file:
         lista = file.readlines()
         lineas = []
+        print(lista)
         for linea in lista:
             linea = re.sub("\n", "", linea)
             lineas.append(linea)
+        print(lista)
+        print(lineas)
         lista2 = []
         for i in lineas:
             lista2.append(len(i))
@@ -106,7 +109,6 @@ arhcivos("mda.txt","mda2.txt","mda4.txt")
 #Ejercicio 9
 
 def frecuencia(archivo):
-    dic = {}
     with open (archivo, "r") as file:
         palabras = file.readlines()
         total = len(palabras)
