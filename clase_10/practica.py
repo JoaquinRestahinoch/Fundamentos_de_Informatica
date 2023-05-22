@@ -17,15 +17,16 @@ print('The solution are {0} and {1}'.format(sol1,sol2))
 #El error está en la linea 11, hay un paréntesis que nunca se cierra. Aparece en rojo.
 #La diferencia entre el Try and Except con el if es que el codigo se corta con el if, mientras que con el try and except el código sigue.
 """
-def eneavo(numero):
-    return 1/numero
 
-print(eneavo(9))
 
 def eneavo(numero):
     try:
         return 1/numero
     except ZeroDivisionError:
         return "No se puede dividir por 0"
+    except TypeError:
+        return "No se puede realizar operaciones entre Strings y Números"
 
 print(eneavo(0))
+print(eneavo("9"))
+print(eneavo(5))
