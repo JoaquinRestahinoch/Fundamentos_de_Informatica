@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.welcome{
+    border: 3px solid black
+  }
+
+.about{
+    border: 3px solid black;
+    padding: 130px
+  }
+
+h1 {
+    color: #000000;
+    position: relative;
+    top: 35px;
+    left: 130px;
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 5px 20px;
+}
+
+.about {
+    background-color: rgb(235, 213, 14);
+}
+
+.welcome {
+    background-color: rgb(127, 83, 133);
+}
+
+.foot {
+    background-color: rgb(113, 216, 149);
+}
+
+.welcome p {
+    color:blue;
+    height: 20px;
+    padding: 15px 20px;
+}
+
+.welcome img {
+    width: 5%;
+    position: absolute;
+    top: 22px;
+    left: 30px;
+}
+
+.div-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 20px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.about img {
+    width: 40%;
+    position: relative;
+    margin-top: -200px;
+    margin-left: 700px;
+}
+
+.foot {
+
+    color:rgb(0, 0, 0);
+    height: 15px;
+    padding: 50px 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}

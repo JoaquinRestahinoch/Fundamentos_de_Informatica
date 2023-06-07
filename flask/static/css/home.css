@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+h1 {
+    color: #f11111;
+}
+
+.welcome {
+    background-color: rgb(0, 0, 0);
+}
+
+.welcome p {
+    color:blue;
+    height: 15px;
+    padding: 15px 20px;
+}
+
+.welcome p:hover {
+    color:rgb(9, 148, 234);
+}
+
+.welcome img {
+    width: 50%;
+}
