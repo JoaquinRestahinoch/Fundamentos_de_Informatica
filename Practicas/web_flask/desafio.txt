@@ -1,0 +1,3 @@
+/libros/new     post
+/libros/<id>    get
+/libros/        get

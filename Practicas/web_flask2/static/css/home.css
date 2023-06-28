@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "VT323";
+    src: url("../fuentes/VT323-Regular.ttf") format('truetype');
+
+  }
+
+@font-face {
+    font-family: "Garet";
+    src: url("../fuentes/Garet-Book.ttf") format('truetype');
+}
+  
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;}
+
+.container {
+  height: 768px;
+  background-color: aquamarine;
+}
